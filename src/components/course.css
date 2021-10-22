@@ -10,11 +10,8 @@ header {
   font-size: 25px;
 }
 
-
-
-
- body {
-font-family: Arial, Helvetica, sans-serif; 
+body {
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   place-items: center;
 }

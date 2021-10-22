@@ -5,7 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Login from "./components/login/login";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signup from "./components/sign_up/sign_up";
-
+import Course from "./components/course";
 function App() {
   const apiCall = (data, method, url) => {
     let config = {
@@ -17,12 +17,13 @@ function App() {
     };
     return fetch(url, config);
   };
+  
   return (
     <Fragment>
       <Router>
         <Navbar />
         <Route exact path="/">
-          <h1>Hello World this is "/"</h1>
+          <Course apiCall={apiCall} />
         </Route>
         <Route exact path="/login">
           <Login apiCall={apiCall} />
