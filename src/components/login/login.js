@@ -18,6 +18,7 @@ const Login = (props) => {
         return response.json();
       })
       .then((data) => {
+        console.log(data);
         if (data["token"]) {
           cookies.set("token", data["token"], { path: "/" });
           history.push("/");
