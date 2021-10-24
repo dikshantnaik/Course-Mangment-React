@@ -4,7 +4,9 @@ import "./course.css";
 
 let Course_card = ({ apiCall }) => {
   const [course_data, setCourse_data] = useState({});
-  const url = "http://127.0.0.1:5000/course";
+  // const url = "http://127.0.0.1:5000/course";
+  const SERVER_URL = "https://coursemangmentapi.herokuapp.com/course";
+  const url = "";
   useEffect(() => {
     apiCall({}, "post", url)
       .then((response) => {

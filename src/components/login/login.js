@@ -4,8 +4,8 @@ import Cookies from "universal-cookie";
 import { useHistory } from "react-router";
 const cookies = new Cookies();
 
-// const SERVER_URL = "https://coursemangmentapi.herokuapp.com/register";
-const SERVER_URL = "http://127.0.0.1:5000/login";
+const SERVER_URL = "https://coursemangmentapi.herokuapp.com/login";
+// const SERVER_URL = "http://127.0.0.1:5000/login";
 const Login = (props) => {
   let history = useHistory();
   const [username, setUsername] = useState("");

@@ -2,8 +2,8 @@ import React, { Fragment, useState } from "react";
 
 import "./../login/login.css";
 // apiCall(ca);
-// const SERVER_URL = "https://coursemangmentapi.herokuapp.com/register";
-const SERVER_URL = "http://127.0.0.1:5000/register";
+const SERVER_URL = "https://coursemangmentapi.herokuapp.com/register";
+// const SERVER_URL = "http://127.0.0.1:5000/register";
 const Sign_up = (props) => {
   const [email, setemail] = useState("");
   const [username, setUsername] = useState("");
